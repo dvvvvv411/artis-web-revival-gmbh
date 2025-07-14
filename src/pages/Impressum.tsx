@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SEOHelmet } from "@/components/SEOHelmet";
+import InsolvencyBanner from "@/components/InsolvencyBanner";
 
 const Impressum = () => {
   return (
@@ -13,6 +14,7 @@ const Impressum = () => {
       <Header />
       
       <div className="corporate-container">
+        <InsolvencyBanner />
         <section className="banner-section">
           <div className="relative z-10">
             <h1 className="text-4xl font-bold mb-6 leading-tight">

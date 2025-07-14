@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SEOHelmet } from "@/components/SEOHelmet";
+import InsolvencyBanner from "@/components/InsolvencyBanner";
 
 const NotFound = () => {
   const location = useLocation();
@@ -24,6 +25,7 @@ const NotFound = () => {
       <Header />
       
       <div className="corporate-container">
+        <InsolvencyBanner />
         <div className="flex items-center justify-center min-h-[60vh]">
           <div className="text-center max-w-lg mx-auto px-6">
             <h1 className="text-6xl font-bold text-primary mb-4">404</h1>
