@@ -4,7 +4,7 @@
 
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
-2015-2017 Corporate Website Style - Flat Design with Corporate Blue
+2010 Website Builder Style - Simple blocks and big buttons
 */
 
 @layer base {
@@ -18,31 +18,31 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 20%;
 
-    /* Corporate blue theme */
-    --primary: 210 100% 40%;
+    /* Simple 2010 color scheme */
+    --primary: 210 80% 45%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 96%;
+    --secondary: 0 0% 85%;
     --secondary-foreground: 0 0% 20%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 50%;
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 210 100% 95%;
-    --accent-foreground: 210 100% 40%;
+    --accent: 210 80% 95%;
+    --accent-foreground: 210 80% 45%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 90%;
+    --border: 0 0% 80%;
     --input: 0 0% 90%;
-    --ring: 210 100% 40%;
+    --ring: 210 80% 45%;
 
-    /* Corporate website specific colors */
-    --corporate-blue: 210 100% 40%;
-    --corporate-blue-dark: 210 100% 30%;
-    --corporate-gray: 0 0% 96%;
-    --corporate-gray-dark: 0 0% 85%;
+    /* 2010 website builder colors */
+    --builder-blue: 210 80% 45%;
+    --builder-blue-dark: 210 80% 35%;
+    --builder-gray: 0 0% 85%;
+    --builder-gray-dark: 0 0% 75%;
 
     --radius: 0.5rem;
 
@@ -109,35 +109,55 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Roboto', 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
   }
 
-  /* Custom classes for 2015-2017 corporate style */
-  .corporate-header {
+  /* 2010 Website Builder Styles */
+  .builder-container {
+    max-width: 800px;
+    margin: 0 auto;
     background: hsl(var(--background));
+  }
+
+  .builder-logo-section {
+    text-align: center;
+    padding: 20px;
+    background: hsl(var(--muted));
+    border-bottom: 2px solid hsl(var(--border));
+  }
+
+  .builder-button {
+    display: inline-block;
+    background: hsl(var(--builder-blue));
+    color: hsl(var(--primary-foreground));
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid hsl(var(--builder-blue-dark));
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .builder-button:hover {
+    background: hsl(var(--builder-blue-dark));
+    border-color: hsl(var(--builder-blue));
+  }
+
+  .builder-content-block {
+    background: hsl(var(--background));
+    padding: 30px;
+    text-align: center;
     border-bottom: 1px solid hsl(var(--border));
   }
 
-  .corporate-nav-item {
-    color: hsl(var(--foreground));
-    transition: color 0.2s ease;
-  }
-
-  .corporate-nav-item:hover {
-    color: hsl(var(--corporate-blue));
-  }
-
-  .corporate-cta {
-    background: hsl(var(--corporate-blue));
-    color: hsl(var(--primary-foreground));
-    transition: background-color 0.2s ease;
-  }
-
-  .corporate-cta:hover {
-    background: hsl(var(--corporate-blue-dark));
-  }
-
-  .corporate-section {
-    background: hsl(var(--corporate-gray));
+  .builder-footer {
+    background: hsl(var(--secondary));
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: hsl(var(--muted-foreground));
+    border-top: 1px solid hsl(var(--border));
   }
 }
