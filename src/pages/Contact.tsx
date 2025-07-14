@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Mail, Clock } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -11,8 +11,8 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHelmet 
-        title="Kontakt - artis GmbH"
-        description="Kontaktieren Sie artis GmbH für Ihre Bauplanung und 3D-Technik Anfragen. Telefon, E-Mail und Anschrift für direkten Kontakt."
+        title="Kontakt - ASH artis GmbH"
+        description="Kontaktieren Sie ASH artis GmbH für Ihre Bauplanung und 3D-Technik Anfragen. E-Mail und Anschrift für direkten Kontakt."
         keywords="Kontakt, Telefon, E-Mail, Adresse, Beratung, Anfrage, artis GmbH"
       />
       <Header />
@@ -47,26 +47,15 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Adresse</h3>
                     <p className="text-muted-foreground">
-                      artis GmbH<br />
-                      Musterstraße 123<br />
-                      12345 Musterstadt<br />
+                      ASH artis GmbH<br />
+                      Bessemerstr. 82<br />
+                      1 Süd<br />
+                      12103 Berlin<br />
                       Deutschland
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
-                    <Phone className="text-primary-foreground w-6 h-6" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-1">Telefon</h3>
-                    <p className="text-muted-foreground">
-                      +49 (0) 123 456789<br />
-                      Fax: +49 (0) 123 456790
-                    </p>
-                  </div>
-                </div>
 
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
@@ -169,7 +158,7 @@ const Contact = () => {
         <section className="py-16 px-8 bg-muted/50">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-8 text-foreground">
-              Warum artis GmbH wählen?
+              Warum ASH artis GmbH wählen?
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="p-6">

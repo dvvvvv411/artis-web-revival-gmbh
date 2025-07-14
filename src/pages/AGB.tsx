@@ -6,8 +6,8 @@ const AGB = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHelmet 
-        title="AGB - artis GmbH"
-        description="Allgemeine Geschäftsbedingungen der artis GmbH für Bauplanung und 3D-Scanner Vermietung."
+        title="AGB - ASH artis GmbH"
+        description="Allgemeine Geschäftsbedingungen der ASH artis GmbH für Bauplanung und 3D-Scanner Vermietung."
         keywords="AGB, Geschäftsbedingungen, Vertragsbedingungen, Rechtliches"
       />
       <Header />
@@ -19,7 +19,7 @@ const AGB = () => {
               Allgemeine Geschäftsbedingungen
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto">
-              Geschäftsbedingungen der artis GmbH
+              Geschäftsbedingungen der ASH artis GmbH
             </p>
           </div>
         </section>
@@ -32,7 +32,7 @@ const AGB = () => {
               <div className="space-y-4 text-muted-foreground">
                 <p>
                   Diese Allgemeinen Geschäftsbedingungen gelten für alle Verträge über die Lieferung von Waren 
-                  und die Erbringung von Leistungen, die zwischen der artis GmbH (nachfolgend "Auftragnehmer") 
+                  und die Erbringung von Leistungen, die zwischen der ASH artis GmbH (nachfolgend "Auftragnehmer") 
                   und ihren Auftraggebern (nachfolgend "Auftraggeber") abgeschlossen werden.
                 </p>
                 

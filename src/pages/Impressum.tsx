@@ -6,8 +6,8 @@ const Impressum = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHelmet 
-        title="Impressum - artis GmbH"
-        description="Rechtliche Angaben und Impressum der artis GmbH für Bauplanung und 3D-Technik."
+        title="Impressum - ASH artis GmbH"
+        description="Rechtliche Angaben und Impressum der ASH artis GmbH für Bauplanung und 3D-Technik."
         keywords="Impressum, Rechtliches, Kontaktdaten, artis GmbH"
       />
       <Header />
@@ -19,7 +19,7 @@ const Impressum = () => {
               Impressum
             </h1>
             <p className="text-xl opacity-90 max-w-2xl mx-auto">
-              Rechtliche Informationen über die artis GmbH
+              Rechtliche Informationen über die ASH artis GmbH
             </p>
           </div>
         </section>
@@ -30,15 +30,14 @@ const Impressum = () => {
               <h2 className="text-2xl font-semibold mb-6 text-foreground">Firmeninformationen</h2>
               
               <div className="space-y-4 text-muted-foreground">
-                <p><strong>Firmenname:</strong> artis GmbH</p>
-                <p><strong>Geschäftsführer:</strong> [Name des Geschäftsführers]</p>
-                <p><strong>Anschrift:</strong> [Straße und Hausnummer]<br />
-                   [PLZ] [Stadt]</p>
-                <p><strong>Telefon:</strong> [Telefonnummer]</p>
+                <p><strong>Firmenname:</strong> ASH artis GmbH</p>
+                <p><strong>Geschäftsführer:</strong> Helmut Ferdinand Brodowski</p>
+                <p><strong>Anschrift:</strong> Bessemerstr. 82, 1 Süd<br />
+                   12103 Berlin</p>
                 <p><strong>E-Mail:</strong> info@artis-gmbh.de</p>
-                <p><strong>Handelsregister:</strong> [Handelsregisternummer]</p>
-                <p><strong>Registergericht:</strong> [Amtsgericht]</p>
-                <p><strong>USt-IdNr.:</strong> [Umsatzsteuer-Identifikationsnummer]</p>
+                <p><strong>Handelsregister:</strong> HRB 270616 B</p>
+                <p><strong>Registergericht:</strong> Amtsgericht Charlottenburg (Berlin)</p>
+                <p><strong>USt-IdNr.:</strong> DE149712988</p>
               </div>
             </div>
 
