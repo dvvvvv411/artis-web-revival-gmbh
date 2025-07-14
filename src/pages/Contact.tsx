@@ -64,8 +64,8 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">E-Mail</h3>
                     <p className="text-muted-foreground">
-                      info@artis-gmbh.de<br />
-                      service@artis-gmbh.de
+                      info@artis-projects.de<br />
+                      service@artis-projects.de
                     </p>
                   </div>
                 </div>
