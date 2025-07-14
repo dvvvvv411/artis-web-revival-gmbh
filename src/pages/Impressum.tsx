@@ -1,6 +1,5 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import InsolvencyBanner from "@/components/InsolvencyBanner";
 import { SEOHelmet } from "@/components/SEOHelmet";
 
 const Impressum = () => {
@@ -11,7 +10,6 @@ const Impressum = () => {
         description="Rechtliche Angaben und Impressum der artis GmbH für Bauplanung und 3D-Technik."
         keywords="Impressum, Rechtliches, Kontaktdaten, artis GmbH"
       />
-      <InsolvencyBanner />
       <Header />
       
       <div className="corporate-container">

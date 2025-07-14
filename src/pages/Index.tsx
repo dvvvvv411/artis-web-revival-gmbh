@@ -2,7 +2,6 @@ import { Calculator, Building, Wrench } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import InsolvencyBanner from "@/components/InsolvencyBanner";
 import { SEOHelmet } from "@/components/SEOHelmet";
 
 const Index = () => {
@@ -13,7 +12,6 @@ const Index = () => {
         description="Ihr zuverlässiger Partner für professionelle Bauplanung und modernste 3D-Scanner-Technologie. Umfassende Ingenieursdienstleistungen für Ihr Bauprojekt."
         keywords="Bauplanung, 3D-Scanner, Ingenieursbüro, Vermessungstechnik, Tragwerksplanung, artis GmbH"
       />
-      <InsolvencyBanner />
       <Header />
       
       <div className="corporate-container">

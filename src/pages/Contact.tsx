@@ -1,7 +1,6 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import InsolvencyBanner from "@/components/InsolvencyBanner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -16,7 +15,6 @@ const Contact = () => {
         description="Kontaktieren Sie artis GmbH für Ihre Bauplanung und 3D-Technik Anfragen. Telefon, E-Mail und Anschrift für direkten Kontakt."
         keywords="Kontakt, Telefon, E-Mail, Adresse, Beratung, Anfrage, artis GmbH"
       />
-      <InsolvencyBanner />
       <Header />
       
       <div className="corporate-container">

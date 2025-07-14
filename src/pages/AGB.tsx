@@ -1,6 +1,5 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import InsolvencyBanner from "@/components/InsolvencyBanner";
 import { SEOHelmet } from "@/components/SEOHelmet";
 
 const AGB = () => {
@@ -11,7 +10,6 @@ const AGB = () => {
         description="Allgemeine Geschäftsbedingungen der artis GmbH für Bauplanung und 3D-Scanner Vermietung."
         keywords="AGB, Geschäftsbedingungen, Vertragsbedingungen, Rechtliches"
       />
-      <InsolvencyBanner />
       <Header />
       
       <div className="corporate-container">
