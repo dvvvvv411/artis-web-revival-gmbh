@@ -1,4 +1,5 @@
 import { Scan } from "lucide-react";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -111,9 +112,12 @@ const Scanner = () => {
                           {scanner.price}
                         </td>
                         <td className="px-6 py-6 border-b border-border">
-                          <button className="bg-primary text-primary-foreground px-4 py-2 rounded-md text-sm font-semibold hover:bg-primary/90 transition-colors">
+                          <Link 
+                            to="/kontakt"
+                            className="inline-block bg-primary text-primary-foreground px-4 py-2 rounded-md text-sm font-semibold hover:bg-primary/90 transition-colors"
+                          >
                             Jetzt anfragen
-                          </button>
+                          </Link>
                         </td>
                       </tr>
                     ))}

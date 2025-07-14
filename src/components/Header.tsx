@@ -1,4 +1,5 @@
 import { Building2 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const navItems = [
@@ -14,21 +15,21 @@ const Header = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2">
             <Building2 className="h-8 w-8 text-primary" />
             <span className="text-xl font-bold text-foreground">artis GmbH</span>
-          </div>
+          </Link>
 
           {/* Navigation */}
           <nav className="hidden md:flex space-x-8">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 className="corporate-nav-item px-3 py-2 text-sm font-medium"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </nav>
 

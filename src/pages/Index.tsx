@@ -1,4 +1,5 @@
 import { Calculator, Building, Wrench } from "lucide-react";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -34,12 +35,12 @@ const Index = () => {
                 Professionelle Tragwerksplanung, Statik und Bauingenieurdienstleistungen für Ihr Bauprojekt. 
                 Von der ersten Idee bis zur erfolgreichen Umsetzung.
               </p>
-              <a 
-                href="#"
+              <Link 
+                to="/ingenieurburo"
                 className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-md font-semibold hover:bg-primary/90 transition-colors"
               >
                 Mehr erfahren →
-              </a>
+              </Link>
             </div>
 
             <div className="service-box">
@@ -53,12 +54,12 @@ const Index = () => {
                 Modernste 3D-Scanner-Technologie zum Mieten. Präzise Vermessung und digitale Erfassung 
                 für Ihre Bauprojekte und Dokumentationen.
               </p>
-              <a 
-                href="#"
+              <Link 
+                to="/3d-scanner"
                 className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-md font-semibold hover:bg-primary/90 transition-colors"
               >
                 Zur Vermietung →
-              </a>
+              </Link>
             </div>
           </div>
         </section>

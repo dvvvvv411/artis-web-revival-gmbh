@@ -1,4 +1,5 @@
 import { Calculator, Building, FileText, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -87,14 +88,12 @@ const Ingenieurburo = () => {
               Laden Sie unsere Leistungsübersicht herunter und erfahren Sie mehr über unsere 
               umfassenden Ingenieursdienstleistungen.
             </p>
-            <a 
-              href="/leistungsuebersicht.pdf"
+            <Link 
+              to="/kontakt"
               className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-md font-semibold hover:bg-primary/90 transition-colors"
-              target="_blank"
-              rel="noopener noreferrer"
             >
-              Leistungsübersicht herunterladen (PDF) →
-            </a>
+              Jetzt Beratung anfragen →
+            </Link>
           </div>
         </section>
       </div>
