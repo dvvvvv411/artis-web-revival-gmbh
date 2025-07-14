@@ -4,7 +4,7 @@
 
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
-2010 Website Builder Style - Simple blocks and big buttons
+2014 Corporate Website Style - Professional layout with structured content
 */
 
 @layer base {
@@ -18,31 +18,32 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 20%;
 
-    /* Simple 2010 color scheme */
-    --primary: 210 80% 45%;
+    /* Corporate 2014 color scheme */
+    --primary: 210 100% 20%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 85%;
+    --secondary: 0 0% 96%;
     --secondary-foreground: 0 0% 20%;
 
-    --muted: 0 0% 95%;
+    --muted: 0 0% 98%;
     --muted-foreground: 0 0% 45%;
 
-    --accent: 210 80% 95%;
-    --accent-foreground: 210 80% 45%;
+    --accent: 210 100% 96%;
+    --accent-foreground: 210 100% 20%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 80%;
-    --input: 0 0% 90%;
-    --ring: 210 80% 45%;
+    --border: 0 0% 85%;
+    --input: 0 0% 95%;
+    --ring: 210 100% 20%;
 
-    /* 2010 website builder colors */
-    --builder-blue: 210 80% 45%;
-    --builder-blue-dark: 210 80% 35%;
-    --builder-gray: 0 0% 85%;
-    --builder-gray-dark: 0 0% 75%;
+    /* 2014 corporate colors */
+    --corporate-blue: 210 100% 20%;
+    --corporate-blue-light: 210 100% 35%;
+    --corporate-gray: 0 0% 96%;
+    --corporate-gray-dark: 0 0% 85%;
+    --banner-bg: 210 20% 15%;
 
     --radius: 0.5rem;
 
@@ -109,54 +110,92 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
   }
 
-  /* 2010 Website Builder Styles */
-  .builder-container {
-    max-width: 800px;
+  /* 2014 Corporate Website Styles */
+  .corporate-container {
+    max-width: 960px;
     margin: 0 auto;
     background: hsl(var(--background));
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   }
 
-  .builder-logo-section {
-    text-align: center;
-    padding: 20px;
-    background: hsl(var(--muted));
-    border-bottom: 2px solid hsl(var(--border));
-  }
-
-  .builder-button {
-    display: inline-block;
-    background: hsl(var(--builder-blue));
-    color: hsl(var(--primary-foreground));
-    padding: 15px 30px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    border: 2px solid hsl(var(--builder-blue-dark));
-    margin: 10px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-  }
-
-  .builder-button:hover {
-    background: hsl(var(--builder-blue-dark));
-    border-color: hsl(var(--builder-blue));
-  }
-
-  .builder-content-block {
+  .corporate-header {
     background: hsl(var(--background));
-    padding: 30px;
-    text-align: center;
-    border-bottom: 1px solid hsl(var(--border));
+    border-bottom: 3px solid hsl(var(--corporate-blue));
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
 
-  .builder-footer {
-    background: hsl(var(--secondary));
-    padding: 10px;
+  .corporate-nav-item {
+    color: hsl(var(--foreground));
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+  }
+
+  .corporate-nav-item:hover {
+    color: hsl(var(--corporate-blue));
+    border-bottom-color: hsl(var(--corporate-blue));
+  }
+
+  .banner-section {
+    background: linear-gradient(135deg, hsl(var(--banner-bg)), hsl(var(--corporate-blue)));
+    color: hsl(var(--primary-foreground));
+    padding: 80px 40px;
     text-align: center;
-    font-size: 12px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .banner-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    pointer-events: none;
+  }
+
+  .service-box {
+    background: hsl(var(--background));
+    border: 1px solid hsl(var(--border));
+    border-radius: 8px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: hsl(var(--corporate-blue));
+  }
+
+  .service-icon {
+    width: 64px;
+    height: 64px;
+    background: hsl(var(--corporate-blue));
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(var(--primary-foreground));
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .corporate-footer {
+    background: hsl(var(--corporate-gray));
+    padding: 30px 40px;
+    text-align: center;
+    font-size: 14px;
     color: hsl(var(--muted-foreground));
     border-top: 1px solid hsl(var(--border));
   }
