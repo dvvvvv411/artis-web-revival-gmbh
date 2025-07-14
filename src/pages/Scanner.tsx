@@ -29,11 +29,48 @@ const Scanner = () => {
               Verfügbare Scanner-Modelle
             </h2>
             
-            <div className="bg-muted/30 rounded-lg p-12 text-center">
-              <Scan className="w-16 h-16 text-muted-foreground mx-auto mb-4" />
-              <p className="text-xl text-muted-foreground font-medium">
-                Nichts verfügbar
-              </p>
+            <div className="bg-muted/30 rounded-lg overflow-hidden">
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead className="bg-muted/50">
+                    <tr>
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-foreground border-b border-border">
+                        Modell
+                      </th>
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-foreground border-b border-border">
+                        Reichweite
+                      </th>
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-foreground border-b border-border">
+                        Genauigkeit
+                      </th>
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-foreground border-b border-border">
+                        Scan-Rate
+                      </th>
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-foreground border-b border-border">
+                        Besonderheiten
+                      </th>
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-foreground border-b border-border">
+                        Preis
+                      </th>
+                      <th className="px-6 py-4 text-left text-sm font-semibold text-foreground border-b border-border">
+                        Aktion
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="bg-background">
+                      <td colSpan={7} className="px-6 py-12 text-center border-b border-border">
+                        <div className="flex flex-col items-center space-y-4">
+                          <Scan className="w-12 h-12 text-muted-foreground" />
+                          <p className="text-lg text-muted-foreground font-medium">
+                            Nichts verfügbar
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </section>
