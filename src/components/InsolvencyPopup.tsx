@@ -16,20 +16,11 @@ export const InsolvencyPopup = ({ onClose }: InsolvencyPopupProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    // Check if user has seen the popup on this page
-    const currentPath = window.location.pathname;
-    const seenKey = `insolvency-popup-seen-${currentPath}`;
-    const hasSeenPopup = localStorage.getItem(seenKey);
-    
-    if (!hasSeenPopup) {
-      setIsOpen(true);
-    }
+    // Show popup automatically on every page visit
+    setIsOpen(true);
   }, []);
 
   const handleClose = () => {
-    const currentPath = window.location.pathname;
-    const seenKey = `insolvency-popup-seen-${currentPath}`;
-    localStorage.setItem(seenKey, "true");
     setIsOpen(false);
     onClose();
   };
