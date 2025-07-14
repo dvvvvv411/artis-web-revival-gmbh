@@ -48,8 +48,8 @@ const UeberUns = () => {
               </div>
               <div className="flex justify-center">
                 <img 
-                  src={artisLogo} 
-                  alt="artis GmbH Firmengebäude" 
+                  src="/lovable-uploads/7e85d39a-a556-4d90-a93b-22d29564652d.png" 
+                  alt="Ingenieurspläne und Bauzeichnungen mit Werkzeugen" 
                   className="rounded-lg shadow-lg max-w-full h-auto"
                 />
               </div>
