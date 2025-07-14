@@ -4,37 +4,45 @@
 
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
+2015-2017 Corporate Website Style - Flat Design with Corporate Blue
 */
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 0 0% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 0 0% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 0 0% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Corporate blue theme */
+    --primary: 210 100% 40%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 20%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 50%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 210 100% 95%;
+    --accent-foreground: 210 100% 40%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 210 100% 40%;
+
+    /* Corporate website specific colors */
+    --corporate-blue: 210 100% 40%;
+    --corporate-blue-dark: 210 100% 30%;
+    --corporate-gray: 0 0% 96%;
+    --corporate-gray-dark: 0 0% 85%;
 
     --radius: 0.5rem;
 
@@ -101,5 +109,35 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Roboto', 'Arial', sans-serif;
+  }
+
+  /* Custom classes for 2015-2017 corporate style */
+  .corporate-header {
+    background: hsl(var(--background));
+    border-bottom: 1px solid hsl(var(--border));
+  }
+
+  .corporate-nav-item {
+    color: hsl(var(--foreground));
+    transition: color 0.2s ease;
+  }
+
+  .corporate-nav-item:hover {
+    color: hsl(var(--corporate-blue));
+  }
+
+  .corporate-cta {
+    background: hsl(var(--corporate-blue));
+    color: hsl(var(--primary-foreground));
+    transition: background-color 0.2s ease;
+  }
+
+  .corporate-cta:hover {
+    background: hsl(var(--corporate-blue-dark));
+  }
+
+  .corporate-section {
+    background: hsl(var(--corporate-gray));
   }
 }
