@@ -45,6 +45,11 @@ All colors MUST be HSL.
     --corporate-gray-dark: 0 0% 85%;
     --banner-bg: 210 20% 15%;
 
+    /* Insolvency announcement colors */
+    --insolvency-orange: 25 95% 53%;
+    --insolvency-orange-light: 25 95% 95%;
+    --insolvency-orange-dark: 25 95% 40%;
+
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
