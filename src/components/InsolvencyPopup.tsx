@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { ExternalLink, X } from "lucide-react";
+import { useLocation } from "react-router-dom";
 import {
   Dialog,
   DialogContent,
@@ -14,11 +15,12 @@ interface InsolvencyPopupProps {
 
 export const InsolvencyPopup = ({ onClose }: InsolvencyPopupProps) => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
-    // Show popup automatically on every page visit
+    // Show popup automatically on every page change
     setIsOpen(true);
-  }, []);
+  }, [location.pathname]);
 
   const handleClose = () => {
     setIsOpen(false);
