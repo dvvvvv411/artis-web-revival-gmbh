@@ -4,7 +4,7 @@ const Header = () => {
   const navItems = [
     { name: "Startseite", href: "/" },
     { name: "Ingenieurbüro", href: "/ingenieurburo" },
-    { name: "3D-Scanner", href: "/3d-scanner" },
+    { name: "3D-Scanner", href: "#" },
     { name: "Über uns", href: "#" },
     { name: "Kontakt", href: "#" },
   ];
