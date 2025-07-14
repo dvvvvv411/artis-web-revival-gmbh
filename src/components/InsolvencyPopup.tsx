@@ -35,7 +35,7 @@ export const InsolvencyPopup = ({ onClose }: InsolvencyPopupProps) => {
   };
 
   const handleLawFirmClick = () => {
-    window.open("https://www.hess-partner.de", "_blank");
+    window.open("https://hess-anwaltskanzlei.de", "_blank");
   };
 
   return (
@@ -50,7 +50,10 @@ export const InsolvencyPopup = ({ onClose }: InsolvencyPopupProps) => {
         <div className="space-y-6 p-4">
           <div className="text-center">
             <p className="text-lg font-semibold mb-4">
-              Hiermit wird bekannt gegeben, dass über das Vermögen der Firma eröffnet wurde.
+              Hiermit wird bekannt gegeben, dass über das Vermögen der Gesellschaft das Insolvenzverfahren eröffnet wurde.
+            </p>
+            <p className="text-base text-gray-700">
+              Alle Zahlungen sind ab sofort ausschließlich an den Insolvenzverwalter zu leisten.
             </p>
           </div>
 
@@ -65,17 +68,22 @@ export const InsolvencyPopup = ({ onClose }: InsolvencyPopupProps) => {
               <p className="font-semibold">Dr. Kai Henrik Heß</p>
               <p>Rechtsanwalt</p>
               <p>Fachanwalt für Insolvenzrecht</p>
-              <p>Kanzlei Dr. Heß & Partner</p>
-              <p>Musterstraße 123</p>
-              <p>12345 Musterstadt</p>
-              <p>Tel: +49 (0) 123 456 789</p>
-              <p>E-Mail: info@hess-partner.de</p>
+              <div className="mt-4 space-y-1">
+                <p>Marienstr. 19/20</p>
+                <p>10117 Berlin</p>
+              </div>
+              <div className="mt-4 space-y-1">
+                <p>Tel.: (030) 75420496</p>
+                <p>E-Mail: k.hess@hess-anwaltskanzlei.de</p>
+                <p>Internet: https://hess-anwaltskanzlei.de</p>
+              </div>
             </div>
           </div>
 
           <div className="text-center space-y-4">
             <p className="text-sm text-gray-600">
-              Weitere Informationen erhalten Sie über die Kanzlei des Insolvenzverwalters.
+              Gläubiger werden gebeten, ihre Forderungen beim Insolvenzverwalter anzumelden. 
+              Weitere Informationen zum Verfahren erhalten Sie über die Kanzlei des Insolvenzverwalters.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
