@@ -3,7 +3,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import artisLogo from "@/assets/artis-logo.jpg";
 import { SEOHelmet } from "@/components/SEOHelmet";
-import InsolvencyBanner from "@/components/InsolvencyBanner";
 
 const UeberUns = () => {
   return (
@@ -16,7 +15,6 @@ const UeberUns = () => {
       <Header />
       
       <div className="corporate-container">
-        <InsolvencyBanner />
         {/* Banner Section */}
         <section className="banner-section">
           <div className="relative z-10">

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SEOHelmet } from "@/components/SEOHelmet";
-import InsolvencyBanner from "@/components/InsolvencyBanner";
 
 const Ingenieurburo = () => {
   return (
@@ -16,7 +15,6 @@ const Ingenieurburo = () => {
       <Header />
       
       <div className="corporate-container">
-        <InsolvencyBanner />
         {/* Title Section */}
         <section className="banner-section">
           <div className="relative z-10">

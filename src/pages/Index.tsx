@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SEOHelmet } from "@/components/SEOHelmet";
-import InsolvencyBanner from "@/components/InsolvencyBanner";
 
 const Index = () => {
   return (
@@ -27,10 +26,6 @@ const Index = () => {
             </p>
           </div>
         </section>
-
-        <div className="corporate-container">
-          <InsolvencyBanner />
-        </div>
 
         {/* Service Boxes Section */}
         <section className="py-20 px-8">

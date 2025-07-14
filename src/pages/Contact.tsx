@@ -6,7 +6,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { SEOHelmet } from "@/components/SEOHelmet";
-import InsolvencyBanner from "@/components/InsolvencyBanner";
 
 const Contact = () => {
   return (
@@ -19,7 +18,6 @@ const Contact = () => {
       <Header />
       
       <div className="corporate-container">
-        <InsolvencyBanner />
         {/* Title Section */}
         <section className="banner-section">
           <div className="relative z-10">
