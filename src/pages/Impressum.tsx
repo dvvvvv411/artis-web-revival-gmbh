@@ -34,7 +34,7 @@ const Impressum = () => {
                 <p><strong>Geschäftsführer:</strong> Helmut Ferdinand Brodowski</p>
                 <p><strong>Anschrift:</strong> Bessemerstr. 82, 1 Süd<br />
                    12103 Berlin</p>
-                <p><strong>E-Mail:</strong> info@artis-projects.de</p>
+                <p><strong>E-Mail:</strong> info@artis-projects.com</p>
                 <p><strong>Handelsregister:</strong> HRB 270616 B</p>
                 <p><strong>Registergericht:</strong> Amtsgericht Charlottenburg (Berlin)</p>
                 <p><strong>USt-IdNr.:</strong> DE149712988</p>
