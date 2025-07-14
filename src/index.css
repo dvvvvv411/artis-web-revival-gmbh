@@ -62,6 +62,11 @@ All colors MUST be HSL.
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Insolvency Banner Colors */
+    --insolvency-background: 25 95% 53%;
+    --insolvency-foreground: 0 0% 0%;
+    --insolvency-border: 25 90% 45%;
   }
 
   .dark {
@@ -100,6 +105,11 @@ All colors MUST be HSL.
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Insolvency Banner Colors */
+    --insolvency-background: 25 95% 53%;
+    --insolvency-foreground: 0 0% 0%;
+    --insolvency-border: 25 90% 45%;
   }
 }
 
@@ -198,5 +208,16 @@ All colors MUST be HSL.
     font-size: 14px;
     color: hsl(var(--muted-foreground));
     border-top: 1px solid hsl(var(--border));
+  }
+
+  /* Insolvency Banner Styles */
+  .insolvency-banner {
+    background-color: hsl(var(--insolvency-background));
+    color: hsl(var(--insolvency-foreground));
+    border-bottom: 2px solid hsl(var(--insolvency-border));
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 }

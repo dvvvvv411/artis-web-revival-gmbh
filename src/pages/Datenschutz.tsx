@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import InsolvencyBanner from "@/components/InsolvencyBanner";
 import { SEOHelmet } from "@/components/SEOHelmet";
 
 const Datenschutz = () => {
@@ -10,6 +11,7 @@ const Datenschutz = () => {
         description="Datenschutzerklärung der artis GmbH. Informationen zum Umgang mit personenbezogenen Daten."
         keywords="Datenschutz, DSGVO, Datenschutzerklärung, Privatsphäre"
       />
+      <InsolvencyBanner />
       <Header />
       
       <div className="corporate-container">

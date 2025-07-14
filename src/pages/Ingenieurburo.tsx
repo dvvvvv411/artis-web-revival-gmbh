@@ -2,6 +2,7 @@ import { Calculator, Building, FileText, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import InsolvencyBanner from "@/components/InsolvencyBanner";
 import { SEOHelmet } from "@/components/SEOHelmet";
 
 const Ingenieurburo = () => {
@@ -12,6 +13,7 @@ const Ingenieurburo = () => {
         description="Professionelle Tragwerksplanung und Bauingenieurdienstleistungen. Statische Berechnungen, Konstruktionspläne und umfassende Projektbetreuung."
         keywords="Ingenieurbüro, Tragwerksplanung, Statik, Bauingenieur, Konstruktion, Berechnungen"
       />
+      <InsolvencyBanner />
       <Header />
       
       <div className="corporate-container">
