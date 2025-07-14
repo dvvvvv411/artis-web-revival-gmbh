@@ -4,32 +4,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const Scanner = () => {
-  const scannerModels = [
-    {
-      name: "FARO Focus S70",
-      range: "0,6 - 70 m",
-      accuracy: "±1 mm",
-      scanRate: "976.000 Punkte/Sek",
-      features: "Kompakt, Outdoor-tauglich",
-      price: "Auf Anfrage"
-    },
-    {
-      name: "Leica RTC360",
-      range: "0,5 - 130 m", 
-      accuracy: "±1 mm",
-      scanRate: "2.000.000 Punkte/Sek",
-      features: "HDR-Imaging, VIS-Technologie",
-      price: "Auf Anfrage"
-    },
-    {
-      name: "Trimble X7",
-      range: "0,6 - 80 m",
-      accuracy: "±2 mm", 
-      scanRate: "500.000 Punkte/Sek",
-      features: "Selbstnivellierend, robust",
-      price: "Auf Anfrage"
-    }
-  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -55,75 +29,11 @@ const Scanner = () => {
               Verfügbare Scanner-Modelle
             </h2>
             
-            <div className="bg-muted/30 rounded-lg overflow-hidden">
-              <div className="overflow-x-auto">
-                <table className="w-full">
-                  <thead className="bg-muted/50">
-                    <tr>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-foreground border-b border-border">
-                        Modell
-                      </th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-foreground border-b border-border">
-                        Reichweite
-                      </th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-foreground border-b border-border">
-                        Genauigkeit
-                      </th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-foreground border-b border-border">
-                        Scan-Rate
-                      </th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-foreground border-b border-border">
-                        Besonderheiten
-                      </th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-foreground border-b border-border">
-                        Preis
-                      </th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-foreground border-b border-border">
-                        Aktion
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {scannerModels.map((scanner, index) => (
-                      <tr key={scanner.name} className={index % 2 === 0 ? "bg-background" : "bg-muted/20"}>
-                        <td className="px-6 py-6 border-b border-border">
-                          <div className="flex items-center space-x-4">
-                            <div className="w-16 h-16 bg-muted/50 rounded-md flex items-center justify-center">
-                              <Scan className="w-8 h-8 text-muted-foreground" />
-                            </div>
-                            <div>
-                              <h3 className="font-semibold text-foreground">{scanner.name}</h3>
-                            </div>
-                          </div>
-                        </td>
-                        <td className="px-6 py-6 text-muted-foreground border-b border-border">
-                          {scanner.range}
-                        </td>
-                        <td className="px-6 py-6 text-muted-foreground border-b border-border">
-                          {scanner.accuracy}
-                        </td>
-                        <td className="px-6 py-6 text-muted-foreground border-b border-border">
-                          {scanner.scanRate}
-                        </td>
-                        <td className="px-6 py-6 text-muted-foreground border-b border-border">
-                          {scanner.features}
-                        </td>
-                        <td className="px-6 py-6 text-muted-foreground border-b border-border">
-                          {scanner.price}
-                        </td>
-                        <td className="px-6 py-6 border-b border-border">
-                          <Link 
-                            to="/kontakt"
-                            className="inline-block bg-primary text-primary-foreground px-4 py-2 rounded-md text-sm font-semibold hover:bg-primary/90 transition-colors"
-                          >
-                            Jetzt anfragen
-                          </Link>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+            <div className="bg-muted/30 rounded-lg p-12 text-center">
+              <Scan className="w-16 h-16 text-muted-foreground mx-auto mb-4" />
+              <p className="text-xl text-muted-foreground font-medium">
+                Nichts verfügbar
+              </p>
             </div>
           </div>
         </section>
