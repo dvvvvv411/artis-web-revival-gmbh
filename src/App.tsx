@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from 'react-helmet-async';
 import { InsolvencyPopup } from "@/components/InsolvencyPopup";
+import { CookieBanner } from "@/components/CookieBanner";
 import Index from "./pages/Index";
 import Ingenieurburo from "./pages/Ingenieurburo";
 import UeberUns from "./pages/UeberUns";
@@ -24,6 +25,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <InsolvencyPopup onClose={() => {}} />
+        <CookieBanner />
         <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
