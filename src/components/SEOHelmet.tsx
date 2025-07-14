@@ -8,9 +8,9 @@ interface SEOHelmetProps {
 }
 
 export const SEOHelmet = ({ 
-  title = "artis GmbH - Bauplanung & 3D-Technik",
-  description = "Ihr Partner für professionelle Bauplanung und 3D-Technik. Umfassende Ingenieursdienstleistungen für Ihr Bauprojekt.",
-  keywords = "Bauplanung, 3D-Technik, Ingenieursbüro, Bauprojekte, artis GmbH",
+  title = "artis GmbH - Ihr Partner für professionelle Bauplanung & 3D-Technik",
+  description = "artis GmbH bietet umfassende Ingenieursdienstleistungen: Tragwerksplanung, Baubegleitung, Gutachten & Prüfungen sowie professionelle Beratung für Ihr Bauprojekt.",
+  keywords = "Bauplanung, 3D-Technik, Tragwerksplanung, Baubegleitung, Ingenieursbüro, Bauprojekte, Gutachten, Prüfungen, artis GmbH",
   canonical
 }: SEOHelmetProps) => {
   return (
