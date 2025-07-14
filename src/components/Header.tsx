@@ -6,7 +6,7 @@ const Header = () => {
     { name: "Ingenieurbüro", href: "/ingenieurburo" },
     { name: "3D-Scanner", href: "/3d-scanner" },
     { name: "Über uns", href: "#" },
-    { name: "Kontakt", href: "/kontakt" },
+    { name: "Kontakt", href: "#" },
   ];
 
   return (
