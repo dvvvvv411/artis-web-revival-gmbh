@@ -1,9 +1,15 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { SEOHelmet } from "@/components/SEOHelmet";
 
 const Impressum = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHelmet 
+        title="Impressum - artis GmbH"
+        description="Rechtliche Angaben und Impressum der artis GmbH für Bauplanung und 3D-Technik."
+        keywords="Impressum, Rechtliches, Kontaktdaten, artis GmbH"
+      />
       <Header />
       
       <div className="corporate-container">

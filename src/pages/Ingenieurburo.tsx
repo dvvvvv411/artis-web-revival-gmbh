@@ -2,10 +2,16 @@ import { Calculator, Building, FileText, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { SEOHelmet } from "@/components/SEOHelmet";
 
 const Ingenieurburo = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHelmet 
+        title="Ingenieurbüro - artis GmbH"
+        description="Professionelle Tragwerksplanung und Bauingenieurdienstleistungen. Statische Berechnungen, Konstruktionspläne und umfassende Projektbetreuung."
+        keywords="Ingenieurbüro, Tragwerksplanung, Statik, Bauingenieur, Konstruktion, Berechnungen"
+      />
       <Header />
       
       <div className="corporate-container">

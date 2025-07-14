@@ -5,10 +5,16 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { SEOHelmet } from "@/components/SEOHelmet";
 
 const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHelmet 
+        title="Kontakt - artis GmbH"
+        description="Kontaktieren Sie artis GmbH für Ihre Bauplanung und 3D-Technik Anfragen. Telefon, E-Mail und Anschrift für direkten Kontakt."
+        keywords="Kontakt, Telefon, E-Mail, Adresse, Beratung, Anfrage, artis GmbH"
+      />
       <Header />
       
       <div className="corporate-container">

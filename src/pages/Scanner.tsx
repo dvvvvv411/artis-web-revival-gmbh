@@ -2,11 +2,16 @@ import { Scan } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { SEOHelmet } from "@/components/SEOHelmet";
 
 const Scanner = () => {
-
   return (
     <div className="min-h-screen bg-background">
+      <SEOHelmet 
+        title="3D-Scanner Vermietung - artis GmbH"
+        description="Derzeit nicht verfügbar aufgrund der Insolvenz. Professionelle 3D-Scanner-Technologie für präzise Vermessung und digitale Erfassung."
+        keywords="3D-Scanner, Vermietung, Vermessung, Laserscan, Digitalisierung, 3D-Technik"
+      />
       <Header />
       
       <div className="corporate-container">

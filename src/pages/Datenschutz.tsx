@@ -1,9 +1,15 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { SEOHelmet } from "@/components/SEOHelmet";
 
 const Datenschutz = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHelmet 
+        title="Datenschutz - artis GmbH"
+        description="Datenschutzerklärung der artis GmbH. Informationen zum Umgang mit personenbezogenen Daten."
+        keywords="Datenschutz, DSGVO, Datenschutzerklärung, Privatsphäre"
+      />
       <Header />
       
       <div className="corporate-container">

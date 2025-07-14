@@ -2,10 +2,16 @@ import { Users, Award, Calendar, MapPin } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import artisLogo from "@/assets/artis-logo.jpg";
+import { SEOHelmet } from "@/components/SEOHelmet";
 
 const UeberUns = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHelmet 
+        title="Über uns - artis GmbH"
+        description="Ihr kompetenter Partner für Bauingenieurwesen und innovative Vermessungstechnik seit über einem Jahrzehnt. Erfahren Sie mehr über unser Unternehmen."
+        keywords="Unternehmen, Team, Erfahrung, Bauingenieurwesen, Vermessungstechnik, artis Geschichte"
+      />
       <Header />
       
       <div className="corporate-container">

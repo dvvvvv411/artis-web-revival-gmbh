@@ -1,73 +1,100 @@
-# Welcome to your Lovable project
+# artis GmbH - Bauplanung & 3D-Technik
 
-## Project info
+Professional website for artis GmbH, showcasing construction planning and 3D scanning services.
 
-**URL**: https://lovable.dev/projects/a55e1ff6-a685-4dc0-b533-0abbbf3ae804
+## Features
 
-## How can I edit this code?
+- **Responsive Design**: Modern corporate design that works on all devices
+- **SEO Optimized**: Dynamic page titles, meta descriptions, and structured data
+- **Performance Optimized**: Fast loading times and efficient code structure
+- **Professional Layout**: 2014 corporate-style design with clean aesthetics
+- **German Language**: Fully localized for German-speaking clients
 
-There are several ways of editing your application.
+## Pages
 
-**Use Lovable**
+- **Home**: Company overview and service highlights
+- **Ingenieurbüro**: Engineering services and expertise
+- **Über uns**: Company history and team information
+- **3D-Scanner**: Scanner rental services (currently unavailable due to insolvency)
+- **Kontakt**: Contact information and inquiry form
+- **Legal Pages**: Impressum, Datenschutz, AGB
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a55e1ff6-a685-4dc0-b533-0abbbf3ae804) and start prompting.
+## Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend**: React 18 + TypeScript
+- **Styling**: Tailwind CSS with custom design system
+- **UI Components**: Shadcn/ui components
+- **Routing**: React Router DOM
+- **SEO**: React Helmet Async for dynamic meta tags
+- **Build Tool**: Vite
+- **Package Manager**: Bun
 
-**Use your preferred IDE**
+## Deployment Ready Features
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+✅ **SEO Optimized**
+- Dynamic page titles and descriptions
+- Open Graph and Twitter Card meta tags
+- Structured sitemap.xml
+- Optimized robots.txt
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+✅ **Performance Optimized**
+- Minimized bundle size
+- Efficient component structure
+- Optimized images and assets
 
-Follow these steps:
+✅ **Clean Codebase**
+- No development dependencies in production
+- Removed all Lovable references
+- Professional error handling
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+⚠️ **Favicon Required**
+To complete the deployment setup, please provide a favicon:
+- Upload a PNG/JPG file (ICO not supported)
+- Recommended size: 32x32px or 64x64px
+- Will be automatically configured in index.html
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Local Development
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+# Install dependencies
+bun install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+# Start development server
+bun run dev
+
+# Build for production
+bun run build
+
+# Preview production build
+bun run preview
 ```
 
-**Edit a file directly in GitHub**
+## Deployment Instructions
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. **Build the project**: Run `bun run build`
+2. **Upload favicon**: Provide a favicon image for final setup
+3. **Deploy**: Upload the `dist` folder to your web server
+4. **Configure domain**: Point your domain to the uploaded files
+5. **SSL Certificate**: Ensure HTTPS is configured
 
-**Use GitHub Codespaces**
+## SEO Configuration
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The website includes comprehensive SEO optimization:
 
-## What technologies are used for this project?
+- **Meta Tags**: Dynamic titles and descriptions for each page
+- **Open Graph**: Social media sharing optimization
+- **Structured Data**: Proper semantic HTML structure
+- **Sitemap**: XML sitemap for search engines
+- **Robots.txt**: Search engine crawling instructions
 
-This project is built with:
+## Contact Information
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+**artis GmbH**
+- **Address**: [Company Address]
+- **Phone**: [Company Phone]
+- **Email**: [Company Email]
+- **Website**: https://artis-gmbh.de
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/a55e1ff6-a685-4dc0-b533-0abbbf3ae804) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+*This website is production-ready and optimized for professional deployment.*

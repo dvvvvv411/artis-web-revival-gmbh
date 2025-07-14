@@ -1,9 +1,15 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { SEOHelmet } from "@/components/SEOHelmet";
 
 const AGB = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHelmet 
+        title="AGB - artis GmbH"
+        description="Allgemeine Geschäftsbedingungen der artis GmbH für Bauplanung und 3D-Scanner Vermietung."
+        keywords="AGB, Geschäftsbedingungen, Vertragsbedingungen, Rechtliches"
+      />
       <Header />
       
       <div className="corporate-container">
